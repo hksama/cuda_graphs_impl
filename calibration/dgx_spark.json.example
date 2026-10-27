@@ -1,0 +1,4 @@
+{
+  "device_name": "NVIDIA DGX Spark (replace after --calibrate-only on device)",
+  "shapes": {}
+}

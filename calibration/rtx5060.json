@@ -1,0 +1,113 @@
+{
+  "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "shapes": {
+    "1_32": {
+      "batch": 1,
+      "seq": 32,
+      "eager_latency_p50_s": 0.0016181819996745617,
+      "replay_latency_p50_s": 0.0007160270001804747,
+      "capture_latency_p50_s": 0.004678420000345795,
+      "warmup_latency_s": 0.2493871599999693,
+      "mem_delta_mb": 64.046875
+    },
+    "1_64": {
+      "batch": 1,
+      "seq": 64,
+      "eager_latency_p50_s": 0.0016242365004472958,
+      "replay_latency_p50_s": 0.0010783640000227024,
+      "capture_latency_p50_s": 0.0033418709999750718,
+      "warmup_latency_s": 0.013619140999253432,
+      "mem_delta_mb": 64.09375
+    },
+    "1_128": {
+      "batch": 1,
+      "seq": 128,
+      "eager_latency_p50_s": 0.001747438499933196,
+      "replay_latency_p50_s": 0.001356881500214513,
+      "capture_latency_p50_s": 0.0037768060001326376,
+      "warmup_latency_s": 0.011207914999431523,
+      "mem_delta_mb": 64.1875
+    },
+    "1_256": {
+      "batch": 1,
+      "seq": 256,
+      "eager_latency_p50_s": 0.00223129149981105,
+      "replay_latency_p50_s": 0.0019362885000191454,
+      "capture_latency_p50_s": 0.004120499000237032,
+      "warmup_latency_s": 0.014131052999800886,
+      "mem_delta_mb": 64.375
+    },
+    "4_32": {
+      "batch": 4,
+      "seq": 32,
+      "eager_latency_p50_s": 0.0017286034999415278,
+      "replay_latency_p50_s": 0.0013402105005297926,
+      "capture_latency_p50_s": 0.0035977150000690017,
+      "warmup_latency_s": 0.011447690999375482,
+      "mem_delta_mb": 64.1875
+    },
+    "4_64": {
+      "batch": 4,
+      "seq": 64,
+      "eager_latency_p50_s": 0.0020835274999626563,
+      "replay_latency_p50_s": 0.001761452999744506,
+      "capture_latency_p50_s": 0.004268188999958511,
+      "warmup_latency_s": 0.012847259000409395,
+      "mem_delta_mb": 64.375
+    },
+    "4_128": {
+      "batch": 4,
+      "seq": 128,
+      "eager_latency_p50_s": 0.002840833999471215,
+      "replay_latency_p50_s": 0.0025810795000325015,
+      "capture_latency_p50_s": 0.004870402000051399,
+      "warmup_latency_s": 0.016972129000350833,
+      "mem_delta_mb": 64.75
+    },
+    "4_256": {
+      "batch": 4,
+      "seq": 256,
+      "eager_latency_p50_s": 0.00634920099946612,
+      "replay_latency_p50_s": 0.006083731499984424,
+      "capture_latency_p50_s": 0.0043755619999501505,
+      "warmup_latency_s": 0.035351030999663635,
+      "mem_delta_mb": 65.5
+    },
+    "8_32": {
+      "batch": 8,
+      "seq": 32,
+      "eager_latency_p50_s": 0.0020917244996780937,
+      "replay_latency_p50_s": 0.0017754170003172476,
+      "capture_latency_p50_s": 0.004168722000031266,
+      "warmup_latency_s": 0.014162746999318188,
+      "mem_delta_mb": 64.375
+    },
+    "8_64": {
+      "batch": 8,
+      "seq": 64,
+      "eager_latency_p50_s": 0.0027886889997716935,
+      "replay_latency_p50_s": 0.0024633610000819317,
+      "capture_latency_p50_s": 0.004929884999910428,
+      "warmup_latency_s": 0.01847522800017032,
+      "mem_delta_mb": 64.75
+    },
+    "8_128": {
+      "batch": 8,
+      "seq": 128,
+      "eager_latency_p50_s": 0.005940549000115425,
+      "replay_latency_p50_s": 0.0056871414999477565,
+      "capture_latency_p50_s": 0.005149229999915406,
+      "warmup_latency_s": 0.03219696899941482,
+      "mem_delta_mb": 65.5
+    },
+    "8_256": {
+      "batch": 8,
+      "seq": 256,
+      "eager_latency_p50_s": 0.00911636000046201,
+      "replay_latency_p50_s": 0.008775938999860955,
+      "capture_latency_p50_s": 0.006837859000370372,
+      "warmup_latency_s": 0.0501044290003847,
+      "mem_delta_mb": 67.0
+    }
+  }
+}

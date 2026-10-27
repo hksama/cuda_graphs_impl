@@ -1,0 +1,29 @@
+model_id: sentence-transformers/all-MiniLM-L6-v2
+dtype: float32
+
+batch_sizes: [1, 4, 8]
+seq_lengths: [32, 64, 128, 256]
+
+max_graph_cache: 4
+mem_budget_mb: 768
+
+calibration_warmup_iters: 5
+calibration_timing_iters: 20
+
+policy3_observe_k: 40
+policy3_precapture_m: 3
+
+policy4_window: 50
+policy4_horizon: 80
+policy4_margin: 1.25
+
+trace_length: 200
+experiment_repeats: 3
+correctness_sample_every: 20
+
+padding_enabled: false
+
+trace_seeds:
+  recurring: 42
+  many_rare: 43
+  shift: 44

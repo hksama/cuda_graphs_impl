@@ -1,0 +1,805 @@
+{
+  "seed": 43,
+  "requests": [
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 8,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 32
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 8,
+      "seq": 64
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 256
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 4,
+      "seq": 128
+    },
+    {
+      "batch": 1,
+      "seq": 64
+    }
+  ]
+}
