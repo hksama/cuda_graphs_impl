@@ -17,11 +17,8 @@ from .policies import (
     PolicyDecision,
     set_policy_calibration,
 )
+from .correctness import outputs_match
 from .types import ShapeKey, ShapeRequest
-
-
-def _max_abs_diff(a: torch.Tensor, b: torch.Tensor) -> float:
-    return float((a - b).abs().max().item())
 
 
 def _run_capture(
@@ -150,7 +147,7 @@ def run_trace(
                 ref, _ = timed_eager_forward(encoder, ref_ids[:, : req.seq], ref_mask[:, : req.seq])
             else:
                 ref, _ = timed_eager_forward(encoder, ids, mask)
-            correct = _max_abs_diff(out, ref) < 1e-5
+            correct = outputs_match(out, ref, config)
         else:
             correct = True
 

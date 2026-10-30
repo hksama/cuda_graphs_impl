@@ -17,6 +17,18 @@ source .venv/bin/activate   # or: uv venv .venv && uv pip install -r requirement
 
 Requires one NVIDIA GPU (developed on RTX 5060 Laptop; use a separate calibration file on DGX Spark).
 
+### GPU / WSL troubleshooting
+
+If you see `Found no NVIDIA driver on your system`:
+
+1. In the **same terminal** as Python, run `nvidia-smi`. It must succeed before any script here will work.
+2. **WSL2:** install the latest [NVIDIA Windows driver with WSL support](https://developer.nvidia.com/cuda/wsl), reboot Windows, open a new WSL shell.
+3. Verify `ls /dev/dxg` exists in WSL.
+4. Reinstall PyTorch with CUDA only after `nvidia-smi` works:  
+   `uv pip install torch --index-url https://download.pytorch.org/whl/cu130` (match your driver/CUDA).
+
+This error is environmental — not caused by the model config or Qwen weights download (loading reached 100% on CPU before `.cuda()` failed).
+
 ## Quick checks
 
 ```bash
@@ -55,6 +67,34 @@ Results land in `results/`; reproducible traces in `traces/`.
 ## CUDA graph cache eviction
 
 Captured graphs share one CUDA graph memory pool per `GraphCache`. Evicting one graph invalidates siblings, so LRU eviction **flushes the entire cache** and resets the pool before capturing again. This matches PyTorch shared-pool semantics and avoids illegal memory access after partial eviction.
+
+## 1B–2B models (Qwen2.5-1.5B, SmolLM2-1.7B)
+
+On 8GB GPUs use **bf16** and a **smaller shape grid** (see `configs/qwen2_5_1_5b.yaml`, `configs/smollm2_1_7b.yaml`). Each model gets its own traces, calibration, and results subdirs.
+
+```bash
+# One model, full pipeline (verify → calibrate → 3 traces × 4 policies)
+python scripts/run_large_model_benchmark.py --config configs/qwen2_5_1_5b.yaml
+
+# Faster iteration
+python scripts/run_large_model_benchmark.py --config configs/qwen2_5_1_5b.yaml --repeats 1
+
+# Both bundled ~1–2B configs
+python scripts/run_large_model_benchmark.py
+```
+
+Manual steps:
+
+```bash
+python scripts/verify_one_shape.py --config configs/qwen2_5_1_5b.yaml --batch 1 --seq 64
+python scripts/run_experiment.py --config configs/qwen2_5_1_5b.yaml --generate-traces --calibrate-only
+python scripts/run_experiment.py --config configs/qwen2_5_1_5b.yaml --repeats 1
+python scripts/analyze_results.py --results-dir results/qwen2_5_1_5b
+```
+
+**Gated 2B models** (e.g. Gemma 2) require Hugging Face access; add a yaml with `model_id` and `trust_remote_code` as needed.
+
+**FP32** on 1.5B+ needs ~6GB+ weights alone—prefer `dtype: bfloat16` on consumer GPUs. Compare savings via `analyze_results.py` on `results/<model_subdir>/` (same as MiniLM: `total_s` vs `always_eager`).
 
 ## Padding ablation
 

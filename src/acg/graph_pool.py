@@ -34,7 +34,10 @@ class CapturedShapeGraph:
 
         self.static_input_ids = torch.zeros(batch, seq, dtype=torch.long, device=device)
         self.static_attention_mask = torch.zeros(batch, seq, dtype=torch.long, device=device)
-
+        # Capture must match replay (make_random_batch uses mask=1). All-zero mask
+        # changes attention on causal models (e.g. Qwen) vs real requests.
+        self.static_attention_mask.fill_(1)
+        self.static_input_ids.fill_(1)
         self._warmup_stream = torch.cuda.Stream()
         self._graph = torch.cuda.CUDAGraph()
         self._mem_pool = mem_pool if mem_pool is not None else torch.cuda.graph_pool_handle()

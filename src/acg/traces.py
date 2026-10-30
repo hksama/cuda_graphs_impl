@@ -26,6 +26,13 @@ def load_trace(path: Path) -> tuple[int, List[ShapeRequest]]:
     return seed, reqs
 
 
+def _pick_hot(keys: List[ShapeKey], preferred: List[ShapeKey], n: int = 3) -> List[ShapeKey]:
+    hot = [k for k in preferred if k in keys]
+    if len(hot) >= 2:
+        return hot
+    return keys[: min(n, len(keys))]
+
+
 def generate_recurring(
     batch_sizes: List[int],
     seq_lengths: List[int],
@@ -33,8 +40,7 @@ def generate_recurring(
     seed: int,
 ) -> List[ShapeRequest]:
     keys = all_shape_keys(batch_sizes, seq_lengths)
-    hot = [(1, 64), (4, 128), (8, 64)]
-    hot = [k for k in hot if k in keys]
+    hot = _pick_hot(keys, [(1, 64), (4, 128), (8, 64)])
     rng = random.Random(seed)
     out: List[ShapeRequest] = []
     for _ in range(length):
@@ -64,10 +70,10 @@ def generate_shift(
     seed: int,
 ) -> List[ShapeRequest]:
     keys = all_shape_keys(batch_sizes, seq_lengths)
-    hot_a = [(1, 32), (4, 64), (8, 128)]
-    hot_b = [(1, 256), (4, 256), (8, 32)]
-    hot_a = [k for k in hot_a if k in keys]
-    hot_b = [k for k in hot_b if k in keys]
+    hot_a = _pick_hot(keys, [(1, 32), (4, 64), (8, 128)])
+    hot_b = _pick_hot(keys, [(1, 256), (4, 256), (8, 32)])
+    if hot_b == hot_a and len(keys) > 1:
+        hot_b = keys[-min(3, len(keys)) :]
     rng = random.Random(seed)
     half = length // 2
     out: List[ShapeRequest] = []

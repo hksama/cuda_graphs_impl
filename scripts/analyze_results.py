@@ -21,7 +21,12 @@ TRACES = ["recurring.json", "many_rare.json", "shift.json"]
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--results-dir", type=Path, default=ROOT / "results")
+    parser.add_argument(
+        "--results-dir",
+        type=Path,
+        default=ROOT / "results",
+        help="Directory containing *_policy_runN.jsonl (e.g. results/qwen2_5_1_5b)",
+    )
     parser.add_argument("--repeats", type=int, default=3)
     args = parser.parse_args()
 

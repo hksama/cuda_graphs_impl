@@ -1,0 +1,59 @@
+{
+  "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "shapes": {
+    "1_32": {
+      "batch": 1,
+      "seq": 32,
+      "eager_latency_p50_s": 0.017302612499861425,
+      "replay_latency_p50_s": 0.010150557000088156,
+      "capture_latency_p50_s": 0.015996908000033727,
+      "warmup_latency_s": 0.07811704599998848,
+      "mem_delta_mb": 64.09375
+    },
+    "1_64": {
+      "batch": 1,
+      "seq": 64,
+      "eager_latency_p50_s": 0.02434042100003353,
+      "replay_latency_p50_s": 0.010799096500022642,
+      "capture_latency_p50_s": 0.013266320999719028,
+      "warmup_latency_s": 0.053587575999699766,
+      "mem_delta_mb": 64.1875
+    },
+    "1_128": {
+      "batch": 1,
+      "seq": 128,
+      "eager_latency_p50_s": 0.02315737800017814,
+      "replay_latency_p50_s": 0.014546375999771044,
+      "capture_latency_p50_s": 0.012937882999722206,
+      "warmup_latency_s": 0.06856057799996051,
+      "mem_delta_mb": 64.375
+    },
+    "2_32": {
+      "batch": 2,
+      "seq": 32,
+      "eager_latency_p50_s": 0.017168173000300158,
+      "replay_latency_p50_s": 0.010881834999963758,
+      "capture_latency_p50_s": 0.01318334000006871,
+      "warmup_latency_s": 0.06806534600036684,
+      "mem_delta_mb": 64.1875
+    },
+    "2_64": {
+      "batch": 2,
+      "seq": 64,
+      "eager_latency_p50_s": 0.020615594999981113,
+      "replay_latency_p50_s": 0.014569214499942973,
+      "capture_latency_p50_s": 0.012746799000069586,
+      "warmup_latency_s": 0.06345760399972278,
+      "mem_delta_mb": 64.375
+    },
+    "2_128": {
+      "batch": 2,
+      "seq": 128,
+      "eager_latency_p50_s": 0.031828272999973706,
+      "replay_latency_p50_s": 0.02698807650017443,
+      "capture_latency_p50_s": 0.014349068000228726,
+      "warmup_latency_s": 0.0966469429999961,
+      "mem_delta_mb": 64.75
+    }
+  }
+}

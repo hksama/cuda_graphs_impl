@@ -1,0 +1,37 @@
+# ~1.7B open LM (HuggingFaceTB/SmolLM2-1.7B) — second point in the 1–2B range.
+model_id: HuggingFaceTB/SmolLM2-1.7B
+dtype: bfloat16
+trust_remote_code: false
+attn_implementation: eager
+
+batch_sizes: [1, 2]
+seq_lengths: [32, 64, 128]
+
+max_graph_cache: 2
+mem_budget_mb: 1024
+
+calibration_warmup_iters: 3
+calibration_timing_iters: 10
+
+policy3_observe_k: 40
+policy3_precapture_m: 2
+
+policy4_window: 50
+policy4_horizon: 80
+policy4_margin: 1.25
+
+trace_length: 200
+experiment_repeats: 3
+correctness_sample_every: 20
+correctness_tolerance: 0.01
+
+padding_enabled: false
+
+trace_seeds:
+  recurring: 42
+  many_rare: 43
+  shift: 44
+
+traces_subdir: smollm2_1_7b
+results_subdir: smollm2_1_7b
+calibration_basename: rtx5060_smollm2_1_7b.json
